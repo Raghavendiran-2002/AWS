@@ -1,0 +1,6 @@
+{
+    "dbhost" : "your host url",
+    "dbname" : "your DB name",
+    "dbuser" :"username",
+    "dbpassword" :"password"
+}
