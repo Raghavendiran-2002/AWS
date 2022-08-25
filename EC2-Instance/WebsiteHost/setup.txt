@@ -1,0 +1,35 @@
+
+
+To Run Basic Website with Hello-World
+Paste : script.sh into "Userdata" under "Advanced details" while creating EC2 Instance (Amazon Linux)
+
+
+To Run Website Created By Yourself:
+
+step 1 :
+  User : S3 to store the file as .zip
+  make the S3 file public
+
+step 2 :
+  Launch EC2 instance with SSH
+
+step 3 : (execute)
+  yum update -y
+  yum install -y httpd
+  systemctl start httpd
+  systemctl enable httpd
+
+step 4 : In Security Group Enable HTTP with 0.0.0.0 and ::0.
+
+step 5 :
+  cd /var/www/html
+  wget <s3-public-url>
+  unzip <filename>.zip
+  mv <filename>/* .
+  rm -r <filename>.zip
+  rm -r <filename>
+  systemctl start httpd
+  systemctl enable httpd
+
+step 6 :
+  Paste the IP-ADDRESS in the chrome
