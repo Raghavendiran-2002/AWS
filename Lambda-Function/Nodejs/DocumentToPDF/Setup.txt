@@ -1,0 +1,12 @@
+npm init -y
+npm install --save https
+npm install --save path
+npm install --save fs
+npm install --save async
+npm install --save lambdafs
+npm install --save child_process
+npm install --save aws-sdk
+
+
+# Execute Inside the Project Directory
+zip -r lambda_one.zip .
