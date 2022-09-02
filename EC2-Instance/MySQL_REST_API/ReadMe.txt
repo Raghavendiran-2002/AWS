@@ -2,9 +2,9 @@ Use EC2-Instance UBUNTU as VM
 
 
 step 1 : Install MySQL
-  (i)sudo apt update
-  (ii)sudo apt install mysql-server
-  (iii)sudo systemctl start mysql.service
+  sudo apt update
+  sudo apt install mysql-server
+  sudo systemctl start mysql.service
 
 step 2 : Add USER on mysql
   sudo mysql
